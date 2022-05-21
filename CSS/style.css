@@ -1,0 +1,21 @@
+iframe{
+    border: 3px inset rgb(0, 0, 0);
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 500px;
+    
+}
+.slide{
+    margin-top: 100px;
+}
+#footer{
+    background-color: rgb(49, 49, 49);
+    color: azure;
+}
+.inner{
+    padding: 30px;
+}
+.copyright{
+    text-align: center;
+}
