@@ -18,22 +18,22 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $("#sitead").mouseover(function(){
-      $("#sitead").css("font-size", "28px");
+      $("#sitead").css("font-size", "38px");
     });
     $("#sitead").mouseout(function(){
-      $("#sitead").css("font-size", "24px");
+      $("#sitead").css("font-size", "32px");
     });
   });
 
 
-  document.getElementById("sitead").onmouseenter(f1());
-  function f1(){
-    document.getElementById("sitead").style.color="crimson";
-}
-  document.getElementById("sitead").onmouseleave(f4());
-  function f4(){
-    document.getElementById("sitead").style.color="cyan";
-}
+//   document.getElementById("sitead").onmouseover(f1());
+//   function f1(){
+//     document.getElementById("sitead").style.fontFamily="Times New Roman";
+// }
+//   document.getElementById("sitead").onmouseleave(f4());
+//   function f4(){
+//     document.getElementById("sitead").style.fontFamily="default";
+// }
 
 
 function f3(){
