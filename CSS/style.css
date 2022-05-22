@@ -4,7 +4,7 @@ iframe{
     margin: auto;
     width: 90%;
     height: 500px;
-    
+    visibility:hidden;
 }
 .slide{
     margin-top: 100px;
@@ -19,3 +19,36 @@ iframe{
 .copyright{
     text-align: center;
 }
+#copyright:link{
+    color: cyan;
+    text-decoration: none;
+}
+#copyright:hover{
+    color: cyan;
+    text-decoration: none;
+}
+.linkler{
+    color: white;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient( #ffe8af 0%, #ffa274 51%, #f962a1 75%, #fb1d79 95%);
+}
+.slideUp {
+    animation-name: slideUp;
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    visibility: visible;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
