@@ -53,3 +53,7 @@ body{
       transform: translateY(0%);
     }
   }
+.shadow{
+    text-shadow: 2px 2px 2px black;
+}
+

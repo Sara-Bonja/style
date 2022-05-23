@@ -26,34 +26,32 @@ $(document).ready(function(){
   });
 
 
-//   document.getElementById("sitead").onmouseover(f1());
-//   function f1(){
-//     document.getElementById("sitead").style.fontFamily="Times New Roman";
-// }
-//   document.getElementById("sitead").onmouseleave(f4());
-//   function f4(){
-//     document.getElementById("sitead").style.fontFamily="default";
-// }
+function f1(){
+    document.getElementById("sitead").className="shadow";
+}
+document.getElementById("sitead").onmouseover(f1());
+
+function f2(){
+    document.getElementById("sitead").classList.remove("shadow");
+}
+document.getElementById("sitead").onmouseout(f2());
 
 
 function f3(){
-    // alert("Sitemize Hoş Geldiniz");
+    alert("Sitemize Hoş Geldiniz");
 }
 
 
 function f10() {
-  if (document.documentElement.scrollTop > 150) {
+  if (document.documentElement.scrollTop > 100) {
     document.getElementById("ifr1").className = "slideUp";
   }
 }
 function f9() {
-  if (document.documentElement.scrollTop > 950) {
+  if (document.documentElement.scrollTop > 650) {
     document.getElementById("ifr2").className = "slideUp";
   }
 }
-
-
-
 
 document.getElementById("arama").onkeydown(f12());
 document.getElementById("arama").onclick(f12());
@@ -63,34 +61,43 @@ function f12(){
   document.getElementById("demo").innerHTML =  y + "  bulunmuyor " ;
 }
 
-// $("#arama").bind("keyup", function() {
-//     var text = $(this).val().toLowerCase();
-//     var items = $(".item_name");
 
-//     //first, hide all:
-//     items.parent().hide();
+function f6(){
+    document.getElementsByClassName("ifr1").setAttribute("title", "2022 Yeni Bahar Koleksiyonu");
+}
+document.getElementsByClassName("ifr1").onmouseenter = function() {f6()};
 
-//     //show only those matching user input:
-//     items.arama(function () {
-//         return $(this).text().toLowerCase().indexOf(text) == 0;
-//     }).parent().show();
-// });
-
-// document.getElementsByClassName("dropdown-toggle").onclick(f8());
-// function f8(){
-//     document.getElementsByClassName("dropdown-menu").style.display="block";
-// }
+function f7(){
+    document.getElementsByClassName("ifr2").setAttribute("title", "2022 Yeni Yaz Koleksiyonu");
+}
+document.getElementsByClassName("ifr2").onmouseenter(f7());
 
 
-// document.getElementById("arama").onclick(f());
-// document.getElementById("arama").onkeydown(f2());
-// // document.getElementById("iframe").onmouseenter(f2());
-// // function f2(){
-// //     document.getElementsByTag("iframe").title="YAAAAAAAAAAAAAAAAAAAAAAA";
-// // }
-// document.getElementById("sitead").onmouseover(f());
-// // 24px
-// document.getElementById("sitead").onmouseout(f2());
+function f4(){
+    document.getElementsByClassName("navbar").className = "navbar-dark";
+}
+document.onload(f4());
 
+function f14(){
+    document.getElementsByClassName("hakkimizda").setAttribute("style","text-shadow: 1px 1px white;");
+}
+document.getElementsByClassName("hakkimizda").onmouseover(f14());
 
+$(document).ready(function(){
+    $(".ilkbahar2022").mouseover(function(){
+      $(".ilkbahar2022").css("font-size", "55px");
+    });
+    $(".ilkbahar2022").mouseout(function(){
+      $(".ilkbahar2022").css("font-size", "50px");
+    });
+  });
+
+$(document).ready(function(){
+    $(".yaz2022").mouseover(function(){
+      $(".yaz2022").css("font-size", "55px");
+    });
+    $(".yaz2022").mouseout(function(){
+      $(".yaz2022").css("font-size", "50px");
+    });
+  });
 
